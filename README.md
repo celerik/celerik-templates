@@ -39,7 +39,7 @@ dotnet run --launch-profile {{namespace}}.Api
 ## source/{{namespace}}.HttpClient Project
 
  - This is an HttpClient to facilitate consuming the **{{namespace}}.Api** microservice from anywhere (mobile app, other microservices)
- - A `.nuspec` file is included to generate and distribute the library as a Nuget Package
+ - A `.nuspec` file is included to generate and distribute the library as a **Nuget Package**
  - Written in `C#`
  - Target Framework: **Net Core 3.1**
  - Package dependencies: **Celerik.NetCore.HttpClient**
