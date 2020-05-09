@@ -21,7 +21,7 @@ cd {{namespace}}.Api
 dotnet run --launch-profile {{namespace}}.Api
 ```
 
-## Solution structure
+## Solution architecture
 
 <div align="center">
     <img src="images/architecture.png" alt="Architecturee" width="916" />
