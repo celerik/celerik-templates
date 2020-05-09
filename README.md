@@ -1,5 +1,26 @@
 # This is a microservice used for: {{purpose}}
 
+## Quick Startup
+
+### Building the solution
+```shell
+cd source
+dotnet build {{namespace}}.Api.sln
+```
+
+### Running unit tests
+```shell
+cd source
+dotnet test {{namespace}}.Api.sln
+```
+
+### Running the API
+```shell
+cd source
+cd {{namespace}}.Api
+dotnet run --launch-profile {{namespace}}.Api
+```
+
 ## Solution structure
 
 <div align="center">
