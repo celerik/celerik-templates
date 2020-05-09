@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Authors>{{authors}}</Authors>
+    <Company>{{company}}</Company>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <version>0.0.1</version>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\{{short-namespace}}Resources-es.json" />
+    <None Remove="Resources\{{short-namespace}}Resources.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\Mock.{{main-entity}}.json" />
+    <EmbeddedResource Include="Resources\{{short-namespace}}Resources-es.json" />
+    <EmbeddedResource Include="Resources\{{short-namespace}}Resources.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Celerik.NetCore.Services" Version="2.5.0" />
+    <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\{{namespace}}.EntityFramework\{{namespace}}.EntityFramework.csproj" />
+    <ProjectReference Include="..\{{namespace}}.Model\{{namespace}}.Model.csproj" />
+  </ItemGroup>
+
+</Project>
