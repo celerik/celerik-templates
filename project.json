@@ -1,12 +1,12 @@
 {
   "templates": [
-	{ "branch": "cs-api-ef-sln" },
+    { "branch": "cs-api-ef-sln" },
     { "branch": "cs-service-ef-proj" },
     { "branch": "cs-service-model-proj" },
-	{ "branch": "cs-ef-sqlserver-proj" },
+    { "branch": "cs-ef-sqlserver-proj" },
     { "branch": "cs-service-test-proj" },
-	{ "branch": "sql-server-proj" }
-	{ "branch": "git-ignore-dotnet" },
+    { "branch": "sql-server-proj" },
+    { "branch": "git-ignore-dotnet" },
     { "branch": "docker-file-csapi" },
     { "branch": "pipelineazure-build-csapi" },
     { "branch": "pipelineazure-publishazurecr-csapi" },
@@ -16,15 +16,15 @@
   "values": {
     "{{authors}}": "Celerik",
     "{{company}}": "Sift Food Labels",
-	"{{container-registry}}": "siftfoodlabels.azurecr.io",
-	"{{db-server}}": "sift-prod-sql.database.windows.net",
+    "{{container-registry}}": "siftfoodlabels.azurecr.io",
+    "{{db-server}}": "sift-prod-sql.database.windows.net",
     "{{db-catalog}}": "sift-app-dev",
     "{{db-schema}}": "sca"
   },
   "secrets": {
-	"{{docker-registry-service-connection}}": "sift-docker-registry-service-connection",
-	"{{db-user}}": "sift-sqlserver-db-user",
-	"{{db-password}}": "sift-sqlverver-db-password",
+    "{{docker-registry-service-connection}}": "sift-docker-registry-service-connection",
+    "{{db-user}}": "sift-sqlserver-db-user",
+    "{{db-password}}": "sift-sqlverver-db-password"
   },
   "expressions": {
     "{{dashed-namespace}}": "{{namespace}}.ToLower().Replace('.', '-')",
