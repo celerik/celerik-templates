@@ -6,4 +6,4 @@
 	- **Build** the solution
 	- Run **Unit Test**
 	- Publish the **Coverage Report** to **Azure DevOps** using **Cobertura**
-	- Publish the **Solution Artifact** to Azure Dev Ops
+	- Publish the **Solution Artifact** to **Azure DevOps**
