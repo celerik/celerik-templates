@@ -1,5 +1,5 @@
 
-## **{{namespace}}.Services** Project
+## source/{{namespace}}.Services Project
 
  - This project provides:
 	- A real-connected service implementation
