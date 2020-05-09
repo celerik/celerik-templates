@@ -1,0 +1,31 @@
+{
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:{{no-ssl-port}}/",
+      "sslPort": {{ssl-port}}
+    }
+  },
+  "profiles": {
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Local",
+        "ServiceType": "ServiceMock",
+        "ConnectionStrings__SqlServer": "server={{db-server}};Database={{db-catalog}};User={{db-user}};Password={{db-password}}"
+      }
+    },
+    "{{namespace}}.Api": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Local",
+        "ServiceType": "ServiceMock",
+        "ConnectionStrings__SqlServer": "server={{db-server}};Database={{db-catalog}};User={{db-user}};Password={{db-password}}"
+      },
+      "applicationUrl": "https://localhost:5001;http://localhost:5000"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package>
+  <metadata>
+    <authors>{{authors}}</authors>
+    <copyright>Copyright (©) {{current-year}}</copyright>
+    <description>HttpClient to {{purpose}}</description>
+    <id>{{namespace}}.HttpClient</id>
+    <owners>{{company}}</owners>
+    <releaseNotes>First release</releaseNotes>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <title>{{namespace}}.HttpClient</title>
+    <version>0.0.1</version>
+    <dependencies>
+      <group targetFramework="netstandard2.0">
+        <dependency id="Celerik.NetCore.HttpClient" version="1.0.4" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="bin\$configuration$\netstandard2.0\{{namespace}}.Model.dll" target="lib\netstandard2.0" />
+    <file src="bin\$configuration$\netstandard2.0\{{namespace}}.Model.xml" target="lib\netstandard2.0" />
+    <file src="bin\$configuration$\netstandard2.0\{{namespace}}.HttpClient.dll" target="lib\netstandard2.0" />
+    <file src="bin\$configuration$\netstandard2.0\{{namespace}}.HttpClient.xml" target="lib\netstandard2.0" />
+  </files>
+</package>
