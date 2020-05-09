@@ -2,7 +2,7 @@
 
 ## Service Project
 
- - This projet provides:
+ - This project provides:
 	- A real-connected service implementation
 	- A mocked service implementation
 	- **Automapper** logic to map between Payloads, Entity Models and Data Transfer Objects
