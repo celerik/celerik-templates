@@ -1,0 +1,27 @@
+{
+  "inputs": [ "{{namespace}}", "{{purpose}}" ],
+  "values": {
+    "{{authors}}": "Celerik",
+    "{{company}}": "Sift Food Labels",
+	"{{container-registry}}": "siftfoodlabels.azurecr.io",
+	"{{db-server}}": "sift-prod-sql.database.windows.net",
+    "{{db-catalog}}": "sift-app-dev",
+    "{{db-schema}}": "sca"
+  },
+  "secrets": {
+	"{{docker-registry-service-connection}}": "sift-docker-registry-service-connection",
+	"{{db-user}}": "sift-sqlserver-db-user",
+	"{{db-password}}": "sift-sqlverver-db-password",
+  },
+  "expressions": {
+    "{{dashed-namespace}}": "{{namespace}}.ToLower().Replace('.', '-')",
+    "{{spaced-namespace}}": "{{namespace}}.Replace('.', ' ')",
+    "{{short-namespace}}": "{{namespace}}.Split('.')[0]",
+    "{{lower-short-namespace}}": "{{short-namespace}}.ToLower()",
+    "{{main-entity}}": "{{namespace}}.Split('.')[1]",
+    "{{camel-main-entity}}": "{{main-entity}}[0].ToString().ToLower() + {{main-entity}}.Substring(1)",
+    "{{current-year}}": "System.DateTime.Now.Year",
+    "{{no-ssl-port}}": "new System.Random((int)System.DateTime.Now.Ticks).Next(49152, 65535)",
+    "{{ssl-port}}": "new System.Random((int)System.DateTime.Now.Ticks).Next(44300, 44399)"
+  }
+}
