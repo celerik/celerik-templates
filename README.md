@@ -10,5 +10,5 @@
 	- Localized string resources
  - Written in `C#`
  - Target Framework: **Net Core 3.1**
- - Package dependencies: Celerik.NetCore.Services, Microsoft.CodeAnalysis.FxCopAnalyzers
- - Project dependencies: {{namespace}}.EntityFramework, {{namespace}}.Model
+ - Package dependencies: **Celerik.NetCore.Services**, **Microsoft.CodeAnalysis.FxCopAnalyzers**
+ - Project dependencies: **{{namespace}}.EntityFramework**, **{{namespace}}.Model**
