@@ -1,5 +1,5 @@
 
-## {{namespace}}.Test Project
+## source/{{namespace}}.Test Project
 
  - This project provides **Unit Test** for the **{{namespace}}.Services** project by using a Mocked Service implementation
  - Written in `C#`
