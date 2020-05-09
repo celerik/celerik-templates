@@ -1,4 +1,17 @@
 {
+  "templates": [
+	{ "branch": "cs-api-ef-sln" },
+    { "branch": "cs-service-ef-proj" },
+    { "branch": "cs-service-model-proj" },
+	{ "branch": "cs-ef-sqlserver-proj" },
+    { "branch": "cs-service-test-proj" },
+	{ "branch": "sql-server-proj" }
+	{ "branch": "git-ignore-dotnet" },
+    { "branch": "docker-file-csapi" },
+    { "branch": "pipelineazure-build-csapi" },
+    { "branch": "pipelineazure-publishazurecr-csapi" },
+    { "branch": "pipelineazure-publishazurenuget-cshttpclient" }
+  ],
   "inputs": [ "{{namespace}}", "{{purpose}}" ],
   "values": {
     "{{authors}}": "Celerik",
