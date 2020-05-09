@@ -21,6 +21,23 @@ cd {{namespace}}.Api
 dotnet run --launch-profile {{namespace}}.Api
 ```
 
+### Environment variables
+ - **ASPNETCORE_ENVIRONMENT**: Allowed values:
+    - `Local`
+    - `Development`
+    - `QA`
+    - `Staging`
+    - `Production`
+ - **ServiceType**: Allowed values:
+    - `ServiceMock`: Runs the service in mock mode
+    - `ServiceEF`: Runs the service in real mode (EF is shortcut for **Entity Framework**)
+ - **Logging__Provider**: Allowed values:
+    - `Console`
+    - `Debug`
+    - `EventSource`
+    - Any comma-separated combination is also allowed. E.g.: `Console,Debug,EventSource`
+ - **ConnectionStrings__SqlServer**: The SqlServer connection string
+
 ## Solution architecture
 
 <div align="center">
