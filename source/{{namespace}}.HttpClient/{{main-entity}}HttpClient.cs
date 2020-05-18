@@ -42,7 +42,7 @@ namespace {{namespace}}.HttpClient
         /// <summary>
         /// The name of the controller this client points to.
         /// </summary>
-        private const string ControllerName = "{{main-entity}}";
+        public const string ControllerName = "{{main-entity}}";
 
         /// <summary>
         /// Reference to the current CelerikHttpClient.
